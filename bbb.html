@@ -37,13 +37,13 @@ r=Math.sqrt(1-v*v);
      x.push(rr*(v));
      y.push(rr*r*Math.cos(u+t));
      z.push(rr*r*Math.sin(u+t));
-     c.push(j)
+     c.push(i)
  }
 
 
 trace={ type: 'scatter3d',
 mode: 'markers',x: x,y: y,z: z,opacity: 0.7,
- marker: {size: 7,color: c,}};
+ marker: {size: 5,color: c,}};
 traces.push(trace);
 
 trace={type:'scatter3d',
@@ -51,7 +51,7 @@ mode:'lines',
 x:[4,-4,0,0,0,0],
 y:[0,0,4,-4,0,0],
 z:[0,0,0,0,4,-4],
-line:{width:1}}
+line:{width:}}
 traces.push(trace);
 }
 
